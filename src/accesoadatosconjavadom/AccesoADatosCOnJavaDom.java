@@ -9,15 +9,15 @@ public class AccesoADatosCOnJavaDom {
 
     
     public static void main(String[] args) {
-    AccesoDOM a=new AccesoDOM();
+    AccesoDOM as=new AccesoDOM();
     
 File f=new File("Libros.xml");//necesitamos Libros.xml en la ruta correcta
 
-a.abrirXMLaDOM(f);
-a.recorreDOMyMuestra();
-a.insertarLibroEnDOM("Giuliete", "David suarez", "22-4-20023");
-a.deleteNode("Giuliete");
-a.guardarDOMcomoArchivo("LibrosDeDOM.xml");
+as.abrirXMLaDOM(f);
+as.recorreDOMyMuestra();
+as.insertarLibroEnDOM("DonDavidSuarez90", "David suarez", "22-4-20023");
+as.deleteNode("El Nombre de la Rosa");
+as.guardarDOMcomoArchivo("LibrosDeDOM3.xml");
 }
     }
     

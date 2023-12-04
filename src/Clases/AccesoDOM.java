@@ -117,12 +117,15 @@ return 0;
 public int deleteNode(String tit) {
 System.out.println("Buscando el Libro " +tit+ " para borrarlo");
 try{
+    
 //Node root=doc.getFirstChild();
 Node raiz= doc.getDocumentElement();
-NodeList nl1=doc.getElementsByTagName("Titulo");
+
+//
+NodeList nls1=doc.getElementsByTagName("Titulo");
 Node n1;
-for(int i=0;i<nl1.getLength();i++){
-n1=nl1.item(i);
+for(int i=0;i<nls1.getLength();i++){
+n1=nls1.item(i);
 
 if(n1.getNodeType()==Node.ELEMENT_NODE){//redundante por getElementsByTagName, no lo es si buscamos getChildNodes()
 
