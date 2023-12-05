@@ -42,7 +42,7 @@ return -1;//if the method aborta en algún punto
 }
 }
 public void recorreDOMyMuestra() {
-	String[] datos=new String[3];//lo usamos para la información de cada libro
+	String[] datos=new String[1];//lo usamos para la información de cada libro
 	Node nodo=null;
 	Node root=doc.getFirstChild();
 	NodeList nodelist=root.getChildNodes(); //(1)Ver dibujo del árbol
